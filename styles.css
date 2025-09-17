@@ -1,0 +1,30 @@
+:root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#22c1c3}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#031021 0%,#081827 100%);color:#e6eef6;margin:0;padding:24px}
+.container{max-width:900px;margin:0 auto;background:rgba(255,255,255,0.02);padding:28px;border-radius:12px}
+header{display:flex;flex-direction:column;gap:6px}
+h1{margin:0;font-size:28px}
+.tagline{color:var(--muted);margin:0}
+nav{display:flex;gap:12px;margin:18px 0}
+nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+nav a.active,nav a:hover{background:rgba(255,255,255,0.03);color:#fff}
+main .intro h2{margin-top:0}
+.sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.sections article{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+a{color:var(--accent)}
+footer{margin-top:18px;color:var(--muted);font-size:14px}
+
+@media (max-width:600px){.container{padding:18px}h1{font-size:22px}}
+
+/* 搜索样式 */
+.search-wrap{margin:12px 0 18px;display:flex;flex-direction:column;gap:8px}
+.search-wrap #site-search{padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(0,0,0,0.25);color:#e6eef6}
+.search-results{background:rgba(255,255,255,0.02);border-radius:8px;padding:8px;max-height:300px;overflow:auto}
+.sr-item{display:block;padding:8px;border-radius:6px;text-decoration:none;color:inherit;margin-bottom:6px}
+.sr-item:hover{background:rgba(255,255,255,0.03)}
+.sr-title{font-weight:600}
+.sr-meta{font-size:12px;color:var(--muted)}
+.sr-body{font-size:13px;color:var(--muted);margin-top:4px}
+.no-results{color:var(--muted);padding:8px}
+mark{background:rgba(34,193,195,0.18);border-radius:3px;padding:0 2px}
+

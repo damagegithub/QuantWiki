@@ -1,0 +1,18 @@
+[
+  {"title":"因子","section":"量化","url":"/docs/quant.html#因子","body":"用于解释资产收益的变量或信号，例如市值、动量、估值等。"},
+  {"title":"回测","section":"量化","url":"/docs/quant.html#回测","body":"用历史数据检验交易策略表现的过程，需注意数据完整性、滑点与交易成本。"},
+  {"title":"Alpha","section":"量化","url":"/docs/quant.html#Alpha","body":"衡量策略或投资组合超过基准的超额收益。"},
+  {"title":"Sharpe 比率","section":"量化","url":"/docs/quant.html#Sharpe","body":"衡量单位波动率下的超额回报。"},
+
+  {"title":"GDP","section":"经济","url":"/docs/econ.html#GDP","body":"衡量一个国家在一定时期内生产的最终商品与服务总值。"},
+  {"title":"通货膨胀","section":"经济","url":"/docs/econ.html#通货膨胀","body":"一般物价水平随时间上升的现象，常用 CPI 或 PCE 指数衡量。"},
+  {"title":"供给与需求","section":"经济","url":"/docs/econ.html#供给与需求","body":"基础经济学模型，决定市场价格与交易量。"},
+
+  {"title":"股票","section":"金融","url":"/docs/finance.html#股票","body":"代表公司所有权的一种证券，持有人可享分红与资本利得。"},
+  {"title":"债券","section":"金融","url":"/docs/finance.html#债券","body":"债务工具，发行方按约定支付利息并在到期偿还本金。"},
+  {"title":"衍生品","section":"金融","url":"/docs/finance.html#衍生品","body":"基础资产价值的合约，例如期货、期权与互换。"},
+
+  {"title":"区块链","section":"Web3","url":"/docs/web3.html#区块链","body":"按时间顺序链接的数据结构，通常以分布式账本形式存在，保证数据不可篡改与可追溯。"},
+  {"title":"智能合约","section":"Web3","url":"/docs/web3.html#智能合约","body":"部署在区块链上的程序，能在满足条件时自动执行。"},
+  {"title":"DeFi","section":"Web3","url":"/docs/web3.html#DeFi","body":"利用区块链与智能合约提供传统金融服务的去中心化实现。"}
+]
