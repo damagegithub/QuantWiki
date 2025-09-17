@@ -7,49 +7,85 @@
   <link rel="stylesheet" href="/docs/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>QuantWiki</h1>
-      <p class="tagline">简洁的量化、经济、金融与 Web3 术语百科</p>
-    </header>
+  <div class="site">
+    <div class="container">
+      <header>
+        <div class="branding">
+          <h1>QuantWiki</h1>
+          <p class="tagline">量化 · 金融 · 加密货币 术语与主题索引</p>
+        </div>
+        <nav>
+          <a href="/docs/index.html" class="active">首页</a>
+          <a href="/docs/quant.html">量化</a>
+          <a href="/docs/finance.html">金融</a>
+          <a href="/docs/web3.html">加密货币</a>
+        </nav>
+      </header>
 
-    <nav>
-      <a href="/docs/index.html" class="active">首页</a>
-      <a href="/docs/quant.html">量化</a>
-      <a href="/docs/econ.html">经济</a>
-      <a href="/docs/finance.html">金融</a>
-      <a href="/docs/web3.html">Web3</a>
-    </nav>
+      <div class="hero">
+        <p>一个面向量化研究者、金融从业者与加密货币爱好者的简洁术语百科。每个分类下包含常见主题与名词解释，便于快速查阅与贡献。</p>
+      </div>
 
-    <main>
-      <section class="intro">
-        <h2>关于 QuantWiki</h2>
-        <p>本项目旨在用简洁、可读的方式介绍量化、经济、金融与 Web3 领域的常见名词与核心概念，方便快速查阅与学习。</p>
-      </section>
+      <div class="category-grid">
+        <section class="card">
+          <h3>量化</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong>因子与选股</strong>
+              <p class="muted">市值、动量、价值、质量等因子，以及多因子组合方法。</p>
+            </div>
+            <div class="topic">
+              <strong>回测与策略</strong>
+              <p class="muted">回测流程、交易成本、数据完整性与过拟合风险。</p>
+            </div>
+            <div class="topic">
+              <strong>风险与绩效</strong>
+              <p class="muted">Sharpe、最大回撤、夏普比率与风险分解。</p>
+            </div>
+          </div>
+        </section>
 
-      <section class="sections">
-        <article>
-          <h3><a href="/docs/quant.html">量化</a></h3>
-          <p>模型、因子、回测、交易策略等术语的简明解释与示例。</p>
-        </article>
-        <article>
-          <h3><a href="/docs/econ.html">经济</a></h3>
-          <p>宏观与微观经济学中的重要概念，如 GDP、通胀、供需等。</p>
-        </article>
-        <article>
-          <h3><a href="/docs/finance.html">金融</a></h3>
-          <p>金融工具、估值、风险管理与衍生品基础。</p>
-        </article>
-        <article>
-          <h3><a href="/docs/web3.html">Web3</a></h3>
-          <p>区块链、智能合约、去中心化金融（DeFi）基础概念。</p>
-        </article>
-      </section>
-    </main>
+        <section class="card">
+          <h3>金融</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong>证券基础</strong>
+              <p class="muted">股票、债券与市场结构基础。</p>
+            </div>
+            <div class="topic">
+              <strong>衍生品</strong>
+              <p class="muted">期货、期权、互换与对冲策略。</p>
+            </div>
+            <div class="topic">
+              <strong>资产定价</strong>
+              <p class="muted">CAPM、套利定价与多因子定价模型。</p>
+            </div>
+          </div>
+        </section>
 
-    <footer>
-      <p>仓库: <a href="https://github.com/damagegithub/QuantWiki">damagegithub/QuantWiki</a> · 部署: GitHub Pages</p>
-    </footer>
+        <section class="card">
+          <h3>加密货币</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong>区块链基础</strong>
+              <p class="muted">分布式账本、共识机制与节点。</p>
+            </div>
+            <div class="topic">
+              <strong>去中心化金融</strong>
+              <p class="muted">DEX、借贷协议、AMM 与流动性提供。</p>
+            </div>
+            <div class="topic">
+              <strong>智能合约与安全</strong>
+              <p class="muted">合约原理、审计与常见漏洞。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p>仓库: <a href="https://github.com/damagegithub/QuantWiki">damagegithub/QuantWiki</a> · 部署: GitHub Pages</p>
+      </footer>
+    </div>
   </div>
   <script src="/docs/search.js"></script>
 </body>
