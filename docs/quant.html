@@ -7,41 +7,69 @@
   <link rel="stylesheet" href="/docs/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>量化</h1>
-      <p class="tagline">量化交易与研究常用术语</p>
-    </header>
-    <nav>
-      <a href="/docs/index.html">首页</a>
-      <a href="/docs/quant.html" class="active">量化</a>
-      <a href="/docs/econ.html">经济</a>
-      <a href="/docs/finance.html">金融</a>
-      <a href="/docs/web3.html">Web3</a>
-    </nav>
+  <div class="site">
+    <div class="container">
+      <header>
+        <div class="branding">
+          <h1>量化</h1>
+          <p class="tagline">量化研究常见主题与名词</p>
+        </div>
+        <nav>
+          <a href="/docs/index.html">首页</a>
+          <a href="/docs/quant.html" class="active">量化</a>
+          <a href="/docs/finance.html">金融</a>
+          <a href="/docs/web3.html">加密货币</a>
+        </nav>
+      </header>
 
-    <main>
-      <section>
-        <h2>术语</h2>
-        <dl>
-          <dt>因子 (Factor)</dt>
-          <dd>用于解释资产收益的变量或信号，例如市值、动量、估值等。量化多因子模型会将多个因子组合用于选股或定价。</dd>
+      <div class="category-grid">
+        <section class="card">
+          <h3>因子与选股</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="因子">因子 (Factor)</strong>
+              <p class="muted">用于解释资产收益的变量或信号，如市值、动量、价值。</p>
+            </div>
+            <div class="topic">
+              <strong id="多因子">多因子模型</strong>
+              <p class="muted">将多个因子组合以提高选股或定价的稳定性。</p>
+            </div>
+          </div>
+        </section>
 
-          <dt>回测 (Backtest)</dt>
-          <dd>用历史数据检验交易策略表现的过程。良好的回测需注意数据完整性、滑点与交易成本。</dd>
+        <section class="card">
+          <h3>回测与策略</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="回测">回测 (Backtest)</strong>
+              <p class="muted">用历史数据检验交易策略表现，需注意数据偏差与交易成本。</p>
+            </div>
+            <div class="topic">
+              <strong id="过拟合">过拟合</strong>
+              <p class="muted">策略在训练数据上表现过好但在真实世界中效果差的风险。</p>
+            </div>
+          </div>
+        </section>
 
-          <dt>Alpha</dt>
-          <dd>衡量策略或投资组合超过基准的超额收益，通常是研究目标之一。</dd>
+        <section class="card">
+          <h3>风险与绩效</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="Alpha">Alpha</strong>
+              <p class="muted">衡量策略或投资组合超过基准的超额收益。</p>
+            </div>
+            <div class="topic">
+              <strong id="Sharpe">Sharpe 比率</strong>
+              <p class="muted">衡量单位波动率下的超额回报。</p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-          <dt>Sharpe 比率</dt>
-          <dd>用来衡量单位波动率下的超额回报：Sharpe = (回报率 - 无风险利率) / 回报标准差。</dd>
-        </dl>
-      </section>
-    </main>
-
-    <footer>
-      <p><a href="/docs/index.html">返回首页</a></p>
-    </footer>
+      <footer>
+        <p><a href="/docs/index.html">返回首页</a></p>
+      </footer>
+    </div>
   </div>
   <script src="/docs/search.js"></script>
 </body>

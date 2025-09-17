@@ -7,38 +7,69 @@
   <link rel="stylesheet" href="/docs/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>金融</h1>
-      <p class="tagline">金融市场与工具入门</p>
-    </header>
-    <nav>
-      <a href="/docs/index.html">首页</a>
-      <a href="/docs/quant.html">量化</a>
-      <a href="/docs/econ.html">经济</a>
-      <a href="/docs/finance.html" class="active">金融</a>
-      <a href="/docs/web3.html">Web3</a>
-    </nav>
+  <div class="site">
+    <div class="container">
+      <header>
+        <div class="branding">
+          <h1>金融</h1>
+          <p class="tagline">金融市场、工具与资产定价</p>
+        </div>
+        <nav>
+          <a href="/docs/index.html">首页</a>
+          <a href="/docs/quant.html">量化</a>
+          <a href="/docs/finance.html" class="active">金融</a>
+          <a href="/docs/web3.html">加密货币</a>
+        </nav>
+      </header>
 
-    <main>
-      <section>
-        <h2>术语</h2>
-        <dl>
-          <dt>股票 (Equity)</dt>
-          <dd>代表公司所有权的一种证券，持有人可享分红与资本利得，但同时承担公司经营风险。</dd>
+      <div class="category-grid">
+        <section class="card">
+          <h3>证券基础</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="股票">股票 (Equity)</strong>
+              <p class="muted">代表公司所有权，包含权利与风险。</p>
+            </div>
+            <div class="topic">
+              <strong id="债券">债券 (Bond)</strong>
+              <p class="muted">债务工具，按期支付利息并到期还本。</p>
+            </div>
+          </div>
+        </section>
 
-          <dt>债券 (Bond)</dt>
-          <dd>债务工具，发行方按约定支付利息并在到期偿还本金。债券价格与利率呈反向关系。</dd>
+        <section class="card">
+          <h3>衍生品与对冲</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="期权">期权</strong>
+              <p class="muted">期权赋予持有人按约定价格买入或卖出标的资产的权利。</p>
+            </div>
+            <div class="topic">
+              <strong id="期货">期货</strong>
+              <p class="muted">在未来按约定价格买卖资产的合约，用于对冲与投机。</p>
+            </div>
+          </div>
+        </section>
 
-          <dt>衍生品 (Derivatives)</dt>
-          <dd>基础资产（股票、利率、商品等）价值的合约，例如期货、期权与互换（swap），常用于对冲或投机。</dd>
-        </dl>
-      </section>
-    </main>
+        <section class="card">
+          <h3>资产定价</h3>
+          <div class="topic-list">
+            <div class="topic">
+              <strong id="CAPM">CAPM</strong>
+              <p class="muted">资本资产定价模型，解释预期回报与系统性风险的关系。</p>
+            </div>
+            <div class="topic">
+              <strong id="多因子定价">多因子定价</strong>
+              <p class="muted">用多个因子共同解释资产回报。</p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-    <footer>
-      <p><a href="/docs/index.html">返回首页</a></p>
-    </footer>
+      <footer>
+        <p><a href="/docs/index.html">返回首页</a></p>
+      </footer>
+    </div>
   </div>
   <script src="/docs/search.js"></script>
 </body>

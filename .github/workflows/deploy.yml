@@ -5,20 +5,41 @@ on:
     branches:
       - main
 
+# Ensure workflow has permission to push to branches and Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # keep the GITHUB_TOKEN credentials so the action can push
+          persist-credentials: true
 
       - name: Setup Node (optional caching)
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Deploy to gh-pages
+      - name: Deploy to gh-pages (using DEPLOY_TOKEN)
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ env.DEPLOY_TOKEN != '' }}
+        with:
+          github_token: ${{ env.DEPLOY_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          keep_files: false
+
+      - name: Deploy to gh-pages (fallback using GITHUB_TOKEN)
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ env.DEPLOY_TOKEN == '' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
