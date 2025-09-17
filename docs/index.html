@@ -87,6 +87,21 @@
       </footer>
     </div>
   </div>
+  
+  <!-- SPA mount point -->
+  <div id="app" style="margin-top:24px"></div>
+
+  <!-- Preact + htm (zero-build lightweight React alternative) -->
+  <script src="https://unpkg.com/preact@10.13.0/dist/preact.min.js"></script>
+  <script src="https://unpkg.com/preact@10.13.0/hooks/dist/hooks.umd.js"></script>
+  <script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+  <script>
+    // expose to app.js
+    window.preact = window.preact || preact;
+    window.preactHooks = window.preactHooks || preactHooks;
+    window.htm = htm;
+  </script>
+  <script src="/docs/app.js"></script>
   <script src="/docs/search.js"></script>
 </body>
 </html>
